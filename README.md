@@ -45,6 +45,18 @@ System.out.println("Hello World"); // ação, de saida
 - System.out.println("Hello World"); aqui é um metodo de imprimir uma linha de texto, é uma ação.
 
 
+## coisas a adicionar
+PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira> cd .\aula01\
+PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> javac Main.Java
+error: Class names, 'Main.Java', are only accepted if annotation processing is explicitly requested
+1 error
+PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> javac Main.java
+PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> java Main.java
+Hello World
+PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> 
+
+
+
 ## Link das fontes que usei para complementar a pesquisa !
 
 https://dicasdeprogramacao.com.br/qual-a-diferenca-entre-jdk-jre-e-jvm/ Acesso em: 15 de março de 2026.
