@@ -55,7 +55,11 @@ PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> java Main.java
 Hello World
 PS C:\Users\CAMARGO\Desktop\dsi-lhorrany-cerqueira\aula01> 
 
+jpnoctis
 
+## variavel aula02
+nao primitivo = String (COMEÇA COM MAIUSCULA!)
+primitivo = todo o resto, boolean, int.. (COM MINUSCULA)
 
 ## Link das fontes que usei para complementar a pesquisa !
 
