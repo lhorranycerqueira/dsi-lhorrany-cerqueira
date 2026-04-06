@@ -1,10 +1,9 @@
 
 public class Variaveis {
     public static void main(String[] args) {
-        int myNum;
-        myNum = 15;
-        String msgTeste;
-        msgTeste = "Oie";
-        System.out.println(myNum + " " + msgTeste);
+        int n1, n2, n3;
+        n1 = n2 = 10;
+        n3 = 5;
+        System.out.println(n1 + n2 + n3);
     }
 }
