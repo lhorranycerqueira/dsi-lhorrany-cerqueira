@@ -61,6 +61,23 @@ jpnoctis
 nao primitivo = String (COMEÇA COM MAIUSCULA!)
 primitivo = todo o resto, boolean, int.. (COM MINUSCULA)
 
+## anotações 13/04
+
+== igual
+=== estritamente igual
+=> ou <= maior igual ou menor igual
+|| ou
+&& e
+byte = menos espaço
+short = um pouco mais que o byte
+int e long(termina com L) = numeros maiores e INTEIROS
+floating - float(ATRIBUIR COM F) e double(TERMINA COM D) = numeros decimais ou cientificos
+1bit = menor parcela - 8bits eh 1byte
+cientifico float f1 = 35e3f = 35000.00
+precisao matematica do float eh melhor
+
+
+
 ## Link das fontes que usei para complementar a pesquisa !
 
 https://dicasdeprogramacao.com.br/qual-a-diferenca-entre-jdk-jre-e-jvm/ Acesso em: 15 de março de 2026.
