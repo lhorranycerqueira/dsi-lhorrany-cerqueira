@@ -1,5 +1,5 @@
-public class Conversoesnarrow {
-   public Conversoesnarrow() {
+public class Conversoes {
+   public Conversoes() {
    }
 
    public static void main(String[] var0) {
@@ -10,6 +10,14 @@ public class Conversoesnarrow {
 
       System.out.println(myDouble1); // saida 9.78
       System.out.println(myInt1);    // saida 9
+
+
+            
+      // widening abrir
+      int myInt = 9;
+      double myDouble = myInt; // int pra double esse eh automatico
+      System.out.println(myInt);    // saida 9
+      System.out.println(myDouble); // saida 9.0
 
    }
 }
