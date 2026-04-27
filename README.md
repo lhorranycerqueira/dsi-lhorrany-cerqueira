@@ -10,7 +10,7 @@ O JDK é Java Development Kit, ele (como o nome diz) é o kit de desenvolvimento
 
 (bytecode é um formato de código intermediário.)
 
- O JVM é o Java Virtual Manchine, a máquina virtual do java que consegue executar o bytecode .class;
+ O JVM é o Java Virtual Machine, a máquina virtual do java que consegue executar o bytecode .class;
 
 O JRE, que ainda não foi mencionado em aula, é o Java Runtime, ele fornece as bibliotecas padrões do java pro development kit compilar o código e permitindo a máquina virtual executar o programa.
 
@@ -76,7 +76,11 @@ floating - float(ATRIBUIR COM F) e double(TERMINA COM D) = numeros decimais ou c
 cientifico float f1 = 35e3f = 35000.00
 precisao matematica do float eh melhor
 
+## anotações dia 27/04
 
+pra transformar
+double myDouble = 9.78d;
+int myInt = 
 
 ## Link das fontes que usei para complementar a pesquisa !
 
