@@ -82,6 +82,16 @@ pra transformar
 double myDouble = 9.78d;
 int myInt = 
 
+so = eh atribução - conjunto matematicos
+focar em otimização de código
+|= eh tipo left join binario
+&= eh tipo o inner join binario
+
+## exercicio pra casa 
+https://www.w3schools.com/java/java_operators_assign.asp
+explicar o que cada operador dessa pagina faz usando comentarios no codigo
+
+
 ## Link das fontes que usei para complementar a pesquisa !
 
 https://dicasdeprogramacao.com.br/qual-a-diferenca-entre-jdk-jre-e-jvm/ Acesso em: 15 de março de 2026.
