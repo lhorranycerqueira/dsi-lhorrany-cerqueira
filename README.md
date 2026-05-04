@@ -63,18 +63,18 @@ primitivo = todo o resto, boolean, int.. (COM MINUSCULA)
 
 ## anotações 13/04
 
-== igual
-=== estritamente igual
-=> ou <= maior igual ou menor igual
-|| ou
-&& e
-byte = menos espaço
-short = um pouco mais que o byte
-int e long(termina com L) = numeros maiores e INTEIROS
-floating - float(ATRIBUIR COM F) e double(TERMINA COM D) = numeros decimais ou cientificos
-1bit = menor parcela - 8bits eh 1byte
-cientifico float f1 = 35e3f = 35000.00
-precisao matematica do float eh melhor
+- == igual
+- === estritamente igual
+- => ou <= maior igual ou menor igual
+- || ou
+- && e
+- byte = menos espaço
+- short = um pouco mais que o byte
+- int e long(termina com L) = numeros maiores e INTEIROS
+- floating - float(ATRIBUIR COM F) e double(TERMINA COM D) = numeros decimais ou cientificos
+- 1bit = menor parcela - 8bits eh 1byte
+- cientifico float f1 = 35e3f = 35000.00
+- precisao matematica do float eh melhor
 
 ## anotações dia 27/04
 
@@ -86,6 +86,21 @@ so = eh atribução - conjunto matematicos
 focar em otimização de código
 |= eh tipo left join binario
 &= eh tipo o inner join binario
+
+## anotações 04/05
+
+==! existe omaigod oposto do ===
+int age = 18;
+System.out.println(age >= 18); 
+operadores logicos !!!!!!!!!!
+- && logical and
+- || logical or
+- ! logical not
+else nao existe sem if
+=== nao funciona em java
+## exercicio dnv
+dentro da aula 6 
+exemplos de comparações e misturando mais umas coisitas - conteudo de hoje com comentarios !
 
 ## exercicio pra casa 
 https://www.w3schools.com/java/java_operators_assign.asp
