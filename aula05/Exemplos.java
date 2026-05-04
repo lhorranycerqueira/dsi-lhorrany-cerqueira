@@ -13,7 +13,7 @@ public class Exemplos {
       double x = 20;
       double y = 20;
       System.out.println(x + y); // de mais
-      System.out.println(x-y); //de menos
+      System.out.println(x - y); //de menos
       System.out.println(x * y); // de multiplicacão
       System.out.println(x / y); // de divisão
       System.out.println(x % y); // de modulus
