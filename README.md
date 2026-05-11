@@ -98,6 +98,10 @@ operadores logicos !!!!!!!!!!
 - ! logical not
 else nao existe sem if
 === nao funciona em java
+
+## anotacoes
+switch, for, do/while, break
+
 ## exercicio dnv
 dentro da aula 6 
 exemplos de comparações e misturando mais umas coisitas - conteudo de hoje com comentarios !
