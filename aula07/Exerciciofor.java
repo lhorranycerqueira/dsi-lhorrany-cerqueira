@@ -5,7 +5,7 @@ public class Exerciciofor
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite um número: ");
+        System.out.print("Digite um número para revelar sua tabuada: ");
         int num = scanner.nextInt();
         int resultado = num;
 
