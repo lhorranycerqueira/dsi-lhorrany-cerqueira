@@ -82,3 +82,5 @@ public class Exercicio01 {
             System.out.println("O seu salário líquido é de: " + salarioTotal);
         }
     }
+
+    // nao esquecer de por o float
