@@ -21,15 +21,18 @@ public class Exercicio02{
             double bonus = salarioSemAdicional * (25.0/100);
             salarioTotal = salarioSemAdicional + bonus;
             System.out.println("Funcionária, o seu salário com bônus é de: " + salarioTotal);
+             System.out.println("Funcionária, o seu bônus é de: " + bonus);
         }
         else if (genero.equals("M") && tempoServico > 15) {
             double bonus = salarioSemAdicional * (20.0/100);
             salarioTotal = salarioSemAdicional + bonus;
             System.out.println("Funcionário, o seu salário com bônus é de: " + salarioTotal);
+            System.out.println("Funcionário, o seu bônus é de: " + bonus);
         }
         else {
             salarioTotal = salarioSemAdicional + 100;
             System.out.println("Seu salário com o bônus de 100 reais é de: " + salarioTotal);
+            System.out.println("Seu bônus é de: " + 100);
         }
     }
 }
