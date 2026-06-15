@@ -123,3 +123,5 @@ Menção honrosa à explicação do professor e aos comentários do meu código!
 ## anotações dia 15/06
 
 pesquisar como fecha scanner
+pesquisar sobre return em caso de if
+tratamento de opções e dados
