@@ -50,3 +50,5 @@ public class Exercicio03 {
     }
 }
 }
+
+// alterar pra float, alterar nos 3 exercicios
