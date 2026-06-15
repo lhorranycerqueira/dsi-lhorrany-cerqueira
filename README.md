@@ -119,3 +119,7 @@ https://www.w3schools.com/java/java_syntax.asp Acesso em: 15 de março de 2026.
 Menção honrosa à explicação do professor e aos comentários do meu código!
 
 //ao haru ride
+
+## anotações dia 15/06
+
+pesquisar como fecha scanner
