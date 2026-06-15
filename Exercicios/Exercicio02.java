@@ -40,3 +40,5 @@ public class Exercicio02{
         }
     }
 }
+
+// adicionar um while ate ter um valor de genero valido
