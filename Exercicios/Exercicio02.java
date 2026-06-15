@@ -20,13 +20,13 @@ public class Exercicio02{
         
         double salarioTotal;
 
-        if (genero.equals("F") && tempoServico > 10) {
+        if ((genero.equals("F") || genero.equals("f")) && tempoServico > 10) {
             double bonus = salarioSemAdicional * (25.0/100);
             salarioTotal = salarioSemAdicional + bonus;
             System.out.println("Funcionária, que corresponde ao código: " + codigoFuncionario + " o seu salário com bônus é de: " + salarioTotal);
              System.out.println("Funcionária, o seu bônus é de: " + bonus);
         }
-        else if (genero.equals("M") && tempoServico > 15) {
+        else if ((genero.equals("M") || genero.equals("m")) && tempoServico > 15) {
             double bonus = salarioSemAdicional * (20.0/100);
             salarioTotal = salarioSemAdicional + bonus;
             System.out.println("Funcionário, que corresponde ao código: " + codigoFuncionario + " o seu salário com bônus é de: " + salarioTotal);
