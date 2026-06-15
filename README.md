@@ -117,3 +117,5 @@ https://dicasdeprogramacao.com.br/qual-a-diferenca-entre-jdk-jre-e-jvm/ Acesso e
 
 https://www.w3schools.com/java/java_syntax.asp Acesso em: 15 de março de 2026.
 Menção honrosa à explicação do professor e aos comentários do meu código!
+
+//ao haru ride

@@ -15,7 +15,17 @@ public class Exercicio03 {
     System.out.print("Insira o comprimento do lado C da forma: ");
     double ladoC = scanner.nextDouble();
 
-    System.out.println("preciso dar um jeito de representar o maior lado sei la como vou fazer isso em ordem descrescente"); 
+
+
+    if (ladoB > ladoA && ladoB > ladoC) {
+        System.out.println("O maior lado é o lado B, com o comprimento de: " + ladoB);
+    }
+    else if (ladoC > ladoA && ladoC > ladoB) {
+        System.out.println("O maior lado é o lado C, com o comprimento de: " + ladoC);
+    }
+    else {
+        System.out.println("O maior lado é o lado A, com o comprimento de: " + ladoA);
+    }
     
     if (ladoA > ladoB + ladoC) {
         System.out.println("Não é possível formar um triângulo com esses lados");
