@@ -125,3 +125,9 @@ Menção honrosa à explicação do professor e aos comentários do meu código!
 pesquisar como fecha scanner
 pesquisar sobre return em caso de if
 tratamento de opções e dados
+
+## exercicio 10/08
+documentar como fazer projeto, colocar4 fotos, passo a passo, print
+- sprintg. initializr
+- dicionario: maven. spring, framework
+- caderno como anotação
