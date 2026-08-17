@@ -27,6 +27,20 @@ public  class  Main { //o nome do arquivo deve ser o mesmo nome da classe princi
 
 public  static  void  main(String[] args) { //recebendo parametros
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 System.out.println("Hello World"); // ação, de saida
 
 }
@@ -137,5 +151,11 @@ documentar como fazer projeto, colocar4 fotos, passo a passo, print
 - Recomendação: Baixar a IDE *Intellij !*
 ## O que é Springboot e Framework?
 - O Springboot é um Framework de Java, mas o que é Framework??
+Segundo a AWS, um framework é uma coleção de componentes de software reutilizáveis que tornam mais eficiente o desenvolvimento de aplicações. São como ferramentas que facilitam a criação dessas aplicações, e essas ferramentas podem definir ou aplicar certas regras na arquitetura do software ou processos de negócios. Ele ajuda as novas aplicações a serem padronizadas. Além de promover mais segurança, reduz o tempo de desenvolvimento e mais flexibilidade dele.
+- Por que se utiliza o SpringBoot? Porque ele é um framework de código aberto e nível corporativo, e é executado na máquina virtual do java. Ele também conta com a funcionalidade de injeção de depêndecias que permite que os objetos definam suas prróprias depedencias que o conteiner do Spring injeta posteriormente neles, assim permitindo que os devs tenham aplicações com componentes acoplados. Há outras funcionalidades, mas num geral as ferramentas dessa biblioteca para funcionalidades do Java EE são executadas em qualquer ambiente
+---
+## Como baixar o SpringBoot?
+- Acesse o site https://start.spring.io //arruma o link dps
+- Utilizando o Iniatilzr-
 
 
