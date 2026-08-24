@@ -145,7 +145,10 @@ documentar como fazer projeto, colocar4 fotos, passo a passo, print
 - sprintg. initializr
 - dicionario: maven. spring, framework
 - caderno como anotação
-
+## 24/08
+mudar o nome de greeting
+lista json
+tutorial da aula https://spring.io/guides/gs/rest-service
 ---
 # JAVA: SpringBoot, Maven e Framework
 - Recomendação: Baixar a IDE *Intellij !*
@@ -156,6 +159,6 @@ Segundo a AWS, um framework é uma coleção de componentes de software reutiliz
 ---
 ## Como baixar o SpringBoot?
 - Acesse o site https://start.spring.io //arruma o link dps
-- Utilizando o Iniatilzr-
+- Utilizando o Iniatilzr 
 
 
