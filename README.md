@@ -153,7 +153,7 @@ tutorial da aula https://spring.io/guides/gs/rest-service
 # JAVA: SpringBoot, Maven e Framework
 - Recomendação: Baixar a IDE *Intellij !*
 ## O que é Springboot e Framework?
-<<<<<<< HEAD
+
 ### O Springboot é um Framework de Java, mas o que é Framework??
 - Framework é, segundo a AWS, uma coleção de componentes de software que podem ser usados novamente para deixar mais eficiente o desenvolvimento de novos softwares. é como uma ferramenta para otimizar tempo.
 ### E por que usar o Spring?
@@ -175,18 +175,19 @@ ___
 - O **Java** vai definir a versão do JDK. O prof prefere a 21 porque a 25 e 26 são muuito recentes e a 17 é bem jurassica. a 21 é o equilibrio perfeito .
 - **Dependencies** são as dependencias que o projeto vai usar, nós utilizamos o Spring Web, o Spring Dev Tools e mais dois que eu esqueci ! adiciopnar depois quando lembrar... Mas tem inumeras funcionalidades e integrações disponíveis!
 - Aí é so clicar em generate, vai baixar o arquivo zip e você abre na IDE que você preferir! (LEMBRANDO Q VSCODE EH EDITOR DE TEXTO)
-=======
 - O Springboot é um Framework de Java, mas o que é Framework??
 Segundo a AWS, um framework é uma coleção de componentes de software reutilizáveis que tornam mais eficiente o desenvolvimento de aplicações. São como ferramentas que facilitam a criação dessas aplicações, e essas ferramentas podem definir ou aplicar certas regras na arquitetura do software ou processos de negócios. Ele ajuda as novas aplicações a serem padronizadas. Além de promover mais segurança, reduz o tempo de desenvolvimento e mais flexibilidade dele.
 - Por que se utiliza o SpringBoot? Porque ele é um framework de código aberto e nível corporativo, e é executado na máquina virtual do java. Ele também conta com a funcionalidade de injeção de depêndecias que permite que os objetos definam suas prróprias depedencias que o conteiner do Spring injeta posteriormente neles, assim permitindo que os devs tenham aplicações com componentes acoplados. Há outras funcionalidades, mas num geral as ferramentas dessa biblioteca para funcionalidades do Java EE são executadas em qualquer ambiente
 ---
-## Como baixar o SpringBoot?
-- Acesse o site https://start.spring.io //arruma o link dps
-- Utilizando o Iniatilzr 
->>>>>>> a13a1150935843d3fbbb497e651af1205b61e0a5
-
 ### Usando o Spring direto na IDE
 - Abrindo o InteliJ...
+![tela inicial intelij](image-1.png)
+- Na tela inicial, clique no new project.
+![tela do springboot](image-2.png)
+- Clicando na opção de Spring Boot, as opções são as quase as mesmas da Web, com a diferença que você pode escolher seu JDK ! O meu é o da eclipse, mas na escola usamos o Amazon Corretto. 
+![tela de dependencia](image-3.png)
+- Essa é a tela de dependencias no intelij
+- Clicando em next, o projeto é criado e já abre na sua IDE !!
 
 ### Fontes pra complementar pesquisa alem das aulas
 - [AWS](https://aws.amazon.com/pt/what-is/framework/)
