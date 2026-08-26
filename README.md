@@ -136,6 +136,31 @@ documentar como fazer projeto, colocar4 fotos, passo a passo, print
 # JAVA: SpringBoot, Maven e Framework
 - Recomendação: Baixar a IDE *Intellij !*
 ## O que é Springboot e Framework?
-- O Springboot é um Framework de Java, mas o que é Framework??
+### O Springboot é um Framework de Java, mas o que é Framework??
+- Framework é, segundo a AWS, uma coleção de componentes de software que podem ser usados novamente para deixar mais eficiente o desenvolvimento de novos softwares. é como uma ferramenta para otimizar tempo.
+### E por que usar o Spring?
+- Ele é popular, de código aberto e de viável para nível corporativo e executado na JVM, com sua autoconfiguração, abordagem opinativa para configuração e capcidade de criar aplicações indepentes, o Spring Framework simplica o dedsenvolvimento. Além disso, há também a funcionalidade de injeção de dependencia que permite que os objetos defina, suas proprias dependencias, proporcionando aos desenvolvedores facilidade na criação de aplicações.
+___
+## Como baixar o SpringBoot?
+- Há duas formas: pela Web ou pela própria IDE !
+### Baixando pela Web...
+- Acesse o site [Spring Initializr](https://start.spring.io)
+- No Initializr, haverá várias opções para criar o seu projeto !
+![Imagem da tela do initializr](image.png)
+- Destrinchando as opções temos:
+- O **project**, que define a ferramente que vai gerenciar as depedencias e compilar o projeto. O maven usa o arquivo pom.xml, ou seja, xml, para configuração, é o mais tradicional. O Gradle - Groovy/Kotlin usa build.gradle ou .kts. é mais moderna e sintaxe é menor. Joao siles recomenda o maven !
+-  **Java**, **Groovy** e **Kotlin** são linguagens de programação, tem que selecionar a linguagem certa para o project certo.
+- SpringBoot vai definir a versão da aplicação que será usada: as *snapshot* são versões mais instaveis, assim como as M1, M2 *(milestones)*; os *números normais* mesmo são versões estáveis e mais recomendadas, a não ser que você precise de um recurso super especifico das versões em desenvolvimento!
+- O Project Metadata é mais complexo ! o  **Group** define o pacote raiz do java; o **Artifact** é o nome do projeto em si; **Name** é quase igual ao artifact, serve de nome de exibição; **Description** como o nome disse, é uma descrição do projeto; **Package** vai ser onde o código-fonte do pacote java principal será organizado, é gerado automaticamente pelo group + artifact mas dá pra trocar.
+- **Packaging** vai definir o formato final do arquivo compilar o projeto. O *Jar* gera um arquivo executável com servidor embutido, e é o padrão hoje em dia; o *War* gera um arquivo que precisará ser implantado em um servidor de aplicação externo, é mais usado em ambientes corporativos legados.
+- **Configuration** define o formato da aplicação; O *Properties* tem o formato application.properties, com pares chave=valor, e é mais simples; o *YAML* é o formato application.yaml, usa indentação e é mais legível para configurações complexas.
+- O **Java** vai definir a versão do JDK. O prof prefere a 21 porque a 25 e 26 são muuito recentes e a 17 é bem jurassica. a 21 é o equilibrio perfeito .
+- **Dependencies** são as dependencias que o projeto vai usar, nós utilizamos o Spring Web, o Spring Dev Tools e mais dois que eu esqueci ! adiciopnar depois quando lembrar... Mas tem inumeras funcionalidades e integrações disponíveis!
+- Aí é so clicar em generate, vai baixar o arquivo zip e você abre na IDE que você preferir! (LEMBRANDO Q VSCODE EH EDITOR DE TEXTO)
 
+### Usando o Spring direto na IDE
+- Abrindo o InteliJ...
 
+### Fontes pra complementar pesquisa alem das aulas
+- [AWS](https://aws.amazon.com/pt/what-is/framework/)
+- [IBM](https://www.ibm.com/br-pt/think/topics/java-spring-boot)
