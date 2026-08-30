@@ -175,9 +175,6 @@ ___
 - O **Java** vai definir a versão do JDK. O prof prefere a 21 porque a 25 e 26 são muuito recentes e a 17 é bem jurassica. a 21 é o equilibrio perfeito .
 - **Dependencies** são as dependencias que o projeto vai usar, nós utilizamos o Spring Web, o Spring Dev Tools e mais dois que eu esqueci ! adiciopnar depois quando lembrar... Mas tem inumeras funcionalidades e integrações disponíveis!
 - Aí é so clicar em generate, vai baixar o arquivo zip e você abre na IDE que você preferir! (LEMBRANDO Q VSCODE EH EDITOR DE TEXTO)
-- O Springboot é um Framework de Java, mas o que é Framework??
-Segundo a AWS, um framework é uma coleção de componentes de software reutilizáveis que tornam mais eficiente o desenvolvimento de aplicações. São como ferramentas que facilitam a criação dessas aplicações, e essas ferramentas podem definir ou aplicar certas regras na arquitetura do software ou processos de negócios. Ele ajuda as novas aplicações a serem padronizadas. Além de promover mais segurança, reduz o tempo de desenvolvimento e mais flexibilidade dele.
-- Por que se utiliza o SpringBoot? Porque ele é um framework de código aberto e nível corporativo, e é executado na máquina virtual do java. Ele também conta com a funcionalidade de injeção de depêndecias que permite que os objetos definam suas prróprias depedencias que o conteiner do Spring injeta posteriormente neles, assim permitindo que os devs tenham aplicações com componentes acoplados. Há outras funcionalidades, mas num geral as ferramentas dessa biblioteca para funcionalidades do Java EE são executadas em qualquer ambiente
 ---
 ### Usando o Spring direto na IDE
 - Abrindo o InteliJ...
