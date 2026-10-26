@@ -1,0 +1,115 @@
+1. Adicionar o conector MySQL. Baixei nada porque o ambiente não acessa o site da MySQL.
+
+Baixe o “Connector/J” em dev.mysql.com/downloads/connector/j (opção Platform Independent) e descompacte.
+No NetBeans, clique com o botão direito em Bibliotecas → Adicionar JAR/pasta.
+Escolha o mysql-connector-j-...jar e marque Caminho relativo.
+
+2. Criar o banco. Abra o MySQL Command Line Client ou o Workbench e execute o conteúdo de banco.sql.
+
+3. Conferir a senha do MySQL. Em src/psv/Conexao.java está usuario = "root" e senha = "1234". Se a sua senha for outra, ou for vazia como no PDF, altere essa linha.
+
+4. Rodar.
+
+Abra o projeto: Arquivo → Abrir projeto e escolha a pasta Estacionamento.
+Faça Executar → Limpar e Construir Projeto (Shift+F11).
+Execute com F6.
+
+5. Gerar o .jar (opcional). Depois do passo 4, pegue dist/Estacionamento.jar junto com a pasta dist/lib. O MySQL precisa estar ligado na máquina onde for abrir.
+
+Se der erro
+“Communications link failure”: o MySQL está desligado ou a porta não é a 3306.
+“Access denied”: a senha em Conexao.java está errada.
+“No suitable driver”: o conector não foi adicionado (passo 1).
+Aviso de versão do Java: em Propriedades → Fontes → Formato de origem/binário, escolha a versão do seu Corretto.
+
+
+
+SENHA DO MYSQL
+1. Testar as mais prováveis
+
+Abra o MySQL Command Line Client (Menu Iniciar → MySQL). Ele pede a senha e já mostra se aceitou:
+
+A senha que você definiu na instalação, que é a mais provável.
+Vazia (só Enter), que é o caso do PDF.
+1234, que é a que estava no código do zip.
+
+Se aparecer mysql>, você acertou. Essa é a senha para colocar em Conexao.java.
+
+Se você usa o MySQL Workbench, a senha salva fica na conexão, em Manage Server Connections, e dá para testar ali também.
+
+2. Se nenhuma funcionar: redefinir a senha (Windows)
+Abra o Prompt de Comando como administrador e pare o serviço:
+   net stop MySQL80
+
+O nome pode ser MySQL ou MySQL57, conforme a sua versão. Confira em Serviços do Windows.
+2. Crie um arquivo C:\mysql-init.txt com este conteúdo (troque 1234 pela senha que quiser):
+
+   ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
+Inicie o MySQL lendo esse arquivo. Ajuste o caminho para a sua versão:
+   "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe" --init-file=C:\mysql-init.txt --console
+Quando aparecer que o servidor está pronto, feche essa janela (Ctrl+C), apague o mysql-init.txt e inicie o serviço de novo:
+   net start MySQL80
+Teste no MySQL Command Line Client com a nova senha.
+
+Se o ALTER USER der erro de sintaxe, a sua versão é antiga (5.x). Use no lugar:
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1234');
+3. Colocar a senha no projeto
+
+Em src/psv/Conexao.java, altere:
+
+java
+String senha = "1234";
+
+para a senha que funcionou. Se for vazia, use "".
+
+O que conferir no Workbench
+
+Na tela inicial, clique no ícone de chave inglesa da sua conexão (Edit Connection) e veja:
+
+Hostname: se for 127.0.0.1 ou localhost, o código já está certo.
+Port: se for 3306, não muda nada. Se for outra, altere a URL em Conexao.java, por exemplo jdbc:mysql://localhost:3307/estacionamento.
+Username: se for root, o código já está certo. Se for outro, altere usuario.
+Senha: em Store in Vault... você define uma senha para o Workbench guardar, mas ele não mostra a que já está salva. Se a conexão abrir sem pedir senha, ela está salva, mas você não consegue lê-la ali. Nesse caso, a forma mais simples é redefinir a senha pelo próprio Workbench (próximo passo).
+Redefinir a senha pelo Workbench
+
+Com a conexão aberta, execute:
+
+sql
+ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
+
+Depois, em Conexao.java, deixe senha = "1234". Se o Workbench conectou, você tem permissão para isso.
+
+Criar o banco pelo Workbench
+
+Abra um editor de SQL (File → New Query Tab), cole o conteúdo do banco.sql e clique no raio para executar. Depois confira se o banco estacionamento aparece na lista da esquerda (clique no botão de atualizar, se não aparecer).
+
+
+Se o seu servidor MySQL é o do XAMPP
+
+Sim, precisa iniciar. Abra o XAMPP Control Panel e clique em Start na linha do MySQL. Enquanto ele não estiver verde, o projeto dá “Communications link failure”. O Apache não é necessário, a menos que você queira usar o phpMyAdmin.
+
+Neste caso, o padrão do XAMPP é:
+
+usuário root
+senha vazia, então em Conexao.java use String senha = "";
+porta 3306
+o Workbench também conecta nele, com host 127.0.0.1, porta 3306, usuário root e sem senha.
+Se você instalou o MySQL Server separado (o instalador oficial)
+
+Não precisa do XAMPP. Basta o serviço do MySQL estar rodando, o que normalmente acontece sozinho com o Windows. Confira em Serviços (procure MySQL80 ou parecido), que deve estar como “Em execução”.
+
+Cuidado se tiver os dois instalados
+
+Os dois tentam usar a porta 3306. Se o XAMPP mostrar erro ao iniciar o MySQL, é conflito de porta. Nesse caso, use só um deles: pare o serviço MySQL80 ou feche o outro.
+
+Como descobrir qual você está usando
+
+Abra o Workbench e conecte. Depois execute:
+
+sql
+SHOW VARIABLES LIKE 'version%';
+
+Se aparecer MariaDB em version, é o do XAMPP. Se aparecer algo como 8.0.xx, é o MySQL oficial.
+
+O projeto funciona com os dois, só muda a senha e a necessidade de iniciar o XAMPP.
